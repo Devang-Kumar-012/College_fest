@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+ 
+ <head>
+  <title>College Fest Registration</title>
+ </head>
+
+ <body style="background-color: lemonchiffon;">
+  <header>
+   <h1 style="text-align: center;"> Technofest 2026</h1>
+  </header>
+
+   <nav style="text-align: center; margin-bottom: 20px;" hover="color: blue;">
+     About Event | Event Schedule | Rules | Registration Form
+    </nav>
+ 
+  <main>
+   
+   <section style="text-align: center;">
+    <h2>About Event</h2>
+    <p id="ChangeText"> Technofest 2026 is a college events where students can participate</p>
+   </section>
+
+   <section style="text-align: center;">
+    <h2>Event Schedule</h2>
+    <table border="1" align="center" style="border-collapse: collapse;" cellpadding="10px" cellspacing="2px" style="text-align: center;">
+     <tr>
+      <th>Activity</th>
+      <th>Time</th>
+     </tr>
+     <tr>
+      <td>Registration and Opening Ceremony</td>
+      <td>9:00AM</td>
+     </tr>
+     <tr>
+      <td>Coding Hackathon</td>
+      <td>9:30AM</td>
+     </tr>
+     <tr>
+      <td>DSA Challenge</td>
+      <td>11:30AM</td>
+     </tr>
+     <tr>
+      <td>Lunch Break</td>
+      <td>1:00PM</td>
+     </tr>
+     <tr>
+      <td>Web Development Challenge</td>
+      <td>2:30PM</td>
+     </tr>
+     <tr>
+      <td>Closing Ceremony and Prize Distribution</td>
+      <td>5:00PM</td>
+     </tr>
+    </table>
+   </section>
+
+   <section style="text-align: center;">
+    <h2>Rules</h2>
+    <ul>
+     <li> Participant must be of legal age</li>
+     <li> Participants must bring a valid ID</li>
+     <li> Judges' decisions are final</li>
+     <li> Registration must be done before the event starts</li>
+     <li> Participants must adhere to the schedule</li>
+     <li> Should not indulge in unethical practices</li>
+    </ul>
+   </section>
+
+   <section style="text-align: center;">
+    <h2>Registration Form</h2>
+    <form>
+
+     <label>Name:</label>
+     <input type="text" id="name" placeholder="Enter your name">
+     <br><br>
+
+     <label>Email:</label>
+     <input type="email" id="email" placeholder="Enter your email">
+     <br><br>
+
+     <label>Phone Number:</label>
+     <input type="tel" id="phone" placeholder="Enter your phone number">
+     <br><br>
+
+     <label>College Name:</label>
+     <input type="text" id="college" placeholder="Enter your college name">
+     <br><br>
+
+     <label>Participant ID:</label>
+     <input type="text" id="participant-id" placeholder="Enter your participant ID">
+     <br><br>
+
+    <label>Participated in:</label><br>
+    <input type="checkbox" name="event" value="Coding Hackathon"> Coding Hackathon<br>
+    <input type="checkbox" name="event" value="DSA Challenge"> DSA Challenge<br>
+    <input type="checkbox" name="event" value="Web Development Challenge"> Web Development Challenge<br><br>
+    
+    <button type="button" onclick="hideemail()">Hide Email</button>
+     <button type="button" onclick="processform()">Register</button>
+    </form>
+
+    <h1 id="count">0 participants have registered till now</h1>
+   </section>
+  </main>
+  <footer style="text-align: center; margin-top: 20px;">
+   <p>
+    Contact: techfestofficial@gmail.com
+   </p>
+  </footer>
+ <script src="fest.js"> </script>
+ </body>
+</html>
